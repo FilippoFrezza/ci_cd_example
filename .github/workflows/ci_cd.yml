@@ -22,7 +22,7 @@ jobs:
         pip install pytest
     - name: set pythonpath
       run: |
-        echo "PYTHONPATH=mlprepare" >> $GITHUB_ENV
+        echo $PYTHONPATH >> $GITHUB_PATH
     - name: Test with pytest
       run: |
         pytest
