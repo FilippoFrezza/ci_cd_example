@@ -23,5 +23,5 @@ jobs:
         pip install pytest 
     - name: Test with pytest
       run: |
-        export PYTHONPATH="$pwd"
+        echo "PYTHONPATH=$pwd" >> $GITHUB_ENV
         pytest
