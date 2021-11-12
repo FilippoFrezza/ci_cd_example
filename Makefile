@@ -1,6 +1,6 @@
-test:
-	pytest
+testing:
+	pytest test 
 
-lint:
+linting:
 	flake8 test main.py utils.py
 	black test main.py utils.py
